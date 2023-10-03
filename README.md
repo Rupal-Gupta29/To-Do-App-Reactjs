@@ -14,8 +14,7 @@ Introducing a feature-rich task management application built with React.js, desi
 Whether you're tackling work projects, personal chores, or simply keeping track of your daily goals, our React.js based task management app enhances your productivity and organization. Log tasks, mark them as completed, edit, and delete effortlessly—empowering you to stay on top of your to-do list with ease. Try it out now and experience the convenience of efficient task management.
 
 ### App Interface
-![react todo app ui](https://github.com/Rupal-Gupta29/To-Do-App-Reactjs/assets/70842313/cd6d297c-0ebb-4683-a4c7-018edbbddad5)
-
+![ui](https://github.com/Rupal-Gupta29/To-Do-App-Reactjs/assets/70842313/ab24c1fa-0134-4338-bcef-bb0440842188)
 
 # Getting Started with Create React App
 
