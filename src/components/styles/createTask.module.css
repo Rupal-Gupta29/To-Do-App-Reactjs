@@ -5,14 +5,14 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: #232229;
-    color: #F6F5F8;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
     font-weight: bold;
     font-family: 'Varela Round', sans-serif;
 }
 
 .taskInp::placeholder{
-    color:#65666c;
+    color:var( --input-placeholder-color);
 }
 
 .addTaskBtn{
@@ -23,5 +23,5 @@
     border: none;
     background-color: #714DD9;
     font-weight: bold;
-    color: #F6F5F8;
+    color: var(--primary-text-color);
 }

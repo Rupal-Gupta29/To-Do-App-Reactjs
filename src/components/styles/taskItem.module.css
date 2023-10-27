@@ -5,15 +5,15 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    color: #F6F5F8;
-    background-color: #232229;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
 }
 
 .editBtn, .deleteBtn, .saveBtn, .backBtn{
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
-    color: #F6F5F8;
+    color: var(--primary-text-color);
     margin-right: 10px;
     font-weight: bold;
 }
@@ -40,8 +40,8 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: #171719;
-    color: #F6F5F8;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
     font-weight: bold;
     width: 80%;
     font-family: 'Varela Round', sans-serif;

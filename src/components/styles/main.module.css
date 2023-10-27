@@ -1,13 +1,17 @@
 .mainContainer{
-    border: 1px solid;
     width: 600px;
     margin: auto;
-    background-color: #171719;
+    background-color: var(--secondary-background-color);
     padding: 20px;
     border-radius: 20px;
     margin-top: 50px;
+    box-shadow: 0 0 3px white, 0 0 5px #714DD9;
+}
+
+.themeContainer{
+    text-align: end;
 }
 
 .heading, .subHeading{
-    color: #F6F5F8;
+    color: var(--primary-text-color);
 }

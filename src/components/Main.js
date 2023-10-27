@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CreateTask from "./CreateTask";
 import TaskList from "./TaskList";
-import styles from './styles/main.module.css'
+import styles from "./styles/main.module.css";
+import sun from "../Assets/sun.png";
+import moon from "../Assets/moon.png";
 
 function Main() {
   const [tasks, setTasks] = useState([]);
+  const [lightTheme, setLightTheme] = useState(false);
 
   const getTask = (taskName) => {
     if (taskName.trim() === "") {
@@ -33,12 +36,36 @@ function Main() {
     setTasks(allTask);
   };
 
-  console.log(tasks)
+  useEffect(() => {
+    if(lightTheme){
+      document.body.classList.add('light');
+    }
+    else{
+      document.body.classList.remove('light');
+    }
+  }, [lightTheme]);
 
   return (
     <div className={styles.mainContainer}>
-    <h2 className={styles.heading}>Hi User,</h2>
-    <h3 className={styles.subHeading}>Be productive today</h3>
+      <div className={styles.themeContainer}>
+        {lightTheme ? (
+          <img
+            src={moon}
+            alt="light-theme"
+            width={45}
+            onClick={() => setLightTheme(false)}
+          />
+        ) : (
+          <img
+            src={sun}
+            alt="light-theme"
+            width={45}
+            onClick={() => setLightTheme(true)}
+          />
+        )}
+      </div>
+      <h2 className={styles.heading}>Hi User,</h2>
+      <h3 className={styles.subHeading}>Be productive today</h3>
       <CreateTask getTaskHandler={getTask} />
       <TaskList
         taskList={tasks}

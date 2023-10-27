@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+:root{
+  --primary-background-color:#232229;
+  --secondary-background-color:#171719;
+  --primary-text-color:#F6F5F8;
+  --input-placeholder-color:#65666c;
+}
+
+.light{
+  --primary-background-color:#E9E8E8;
+  --secondary-background-color:white;
+  --primary-text-color:black;
+  --input-placeholder-color:black;
+}
+
 body {
   font-family: 'Varela Round', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #232229;
+  background-color: var(--primary-background-color);
 }
